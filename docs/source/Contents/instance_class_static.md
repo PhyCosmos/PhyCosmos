@@ -42,25 +42,13 @@ class MyAccount:
     
 MyAccount.interest_rate_year(0.005)
 ```
-
-
-
-
     0.06167781186449828
-
-
-
 
 ```python
 MyAccount.get_trans_cost()
 ```
 
-
-
-
     '10'
-
-
 
 
 ```python
