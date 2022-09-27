@@ -10,12 +10,12 @@ class 안에 있는 method 는 오브젝트 `cls`와 인스턴스 `self`에 대�
 |class method|`cls`| `ClassName.class_method()`|
 |static method|없음 | `ClassName.static_mehtod()`|
 
-- static method는 독립적으로 사용할 수 있지만, class [namespace](./namespace.md)에 속하게 된다.
+- 1) static method는 독립적으로 사용할 수 있지만, class [namespace](./namespace.md)에 속하게 된다.
     - class나 instance에 접근할 수 있는 권한이 없으므로 수정하는 행위가 차단된다.
     - `@staticmethod` 데코레이터를 사용하여 정의한다.
-- class method는 class 오브젝트에 관한 method로서 인스턴스에 대한 접근이 금지된다.
++ 2) class method는 class 오브젝트에 관한 method로서 인스턴스에 대한 접근이 금지된다.
     - `@classmethod` 데코레이터를 사용하여  정의한다.
-- instance method는 인스턴스`self`에 접근할 수 있는 메서드이므로 instantiation이 반드시 필요하다.
+* 3) instance method는 인스턴스`self`에 접근할 수 있는 메서드이므로 instantiation이 반드시 필요하다.
 
 
 ```python
