@@ -182,19 +182,30 @@
 </tr>
 </tbody>
 </table>
-<ul class="simple">
-<li><p>static method는 독립적으로 사용할 수 있지만, class <a class="reference internal" href="namespace.html"><span class="doc std std-doc">namespace</span></a>에 속하게 된다.</p>
 <ul>
+<li><ol class="arabic simple">
+<li><p>static method는 독립적으로 사용할 수 있지만, class <a class="reference internal" href="namespace.html"><span class="doc std std-doc">namespace</span></a>에 속하게 된다.</p></li>
+</ol>
+<ul class="simple">
 <li><p>class나 instance에 접근할 수 있는 권한이 없으므로 수정하는 행위가 차단된다.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&#64;staticmethod</span></code> 데코레이터를 사용하여 정의한다.</p></li>
 </ul>
 </li>
-<li><p>class method는 class 오브젝트에 관한 method로서 인스턴스에 대한 접근이 금지된다.</p>
+</ul>
 <ul>
+<li><ol class="arabic simple" start="2">
+<li><p>class method는 class 오브젝트에 관한 method로서 인스턴스에 대한 접근이 금지된다.</p></li>
+</ol>
+<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">&#64;classmethod</span></code> 데코레이터를 사용하여  정의한다.</p></li>
 </ul>
 </li>
+</ul>
+<ul class="simple">
+<li><ol class="arabic simple" start="3">
 <li><p>instance method는 인스턴스<code class="docutils literal notranslate"><span class="pre">self</span></code>에 접근할 수 있는 메서드이므로 instantiation이 반드시 필요하다.</p></li>
+</ol>
+</li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 

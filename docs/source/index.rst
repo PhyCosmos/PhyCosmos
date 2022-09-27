@@ -10,8 +10,8 @@ Welcome to PhyCosmos's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   Contents/namespace.html
-   Contents/instance_class_static.html
+   Contents/namespace.md
+   Contents/instance_class_static.md
 
 Indices and tables
 ==================
