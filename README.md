@@ -1,5 +1,8 @@
 ### Hi there 👋
-
+#### Hazy python
+##### 1. Class
+- [Namespace](namespace.ipynb) 
+- [Methods in the Class](instance_class_static.ipynb)
 <!--
 **PhyCosmos/Phycosmos** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
