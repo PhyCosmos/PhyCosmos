@@ -54,10 +54,18 @@ docs$ source ./.venv/bin/activate
 ```
 
 #### 1.1.3 Filing `docs/` directory with sphinx tools
-- Go to the `docs/` and command like this.
+>
+> Before doing that, it is good idea to create a new orphan branch `gh-pages` as github suggested, to isolate documenting process from the main project and to publish your site from the branch.  
+> Go to the `docs/` and create branch `gh-pages` there.
+> ```
+> (sphinx)$ cd docs
+> (sphinx)docs$ git checkout --orphan gh-pages
+> (sphinx)docs$ git rm -rf
+> ```
+>  Removes the contents from your default branch from the working directory
 
+- Now, we are ready to execute Sphinx quickstart command.
 ```
-(sphinx)$ cd docs
 (sphinx)docs$ sphinx-quickstart
 ```
 
@@ -197,7 +205,30 @@ source/                    # put your base files or directories of docs(.md)
 ```
 
 ### 1.5 deploy in Github pages
+- You need to create two files in `docs/` directory.
+- The one is an empty `docs/.nojekyll` to prevent github action process to apply jekyll themes.
+- And the other is an `docs/index.html` to redirect it to `docs/build/html/index.html` like this.
+```
+<html>
+    <head>
+      <meta http-equiv="refresh" content="0; url=./build/html/index.html">
+    </head>
+</html>
+``` 
+- Next, commit and push to github repo. Are you still in `gh-pages` branch, right?
+```
+(sphinx)docs$ git add .
+(sphjnx)docs$ git commit -m "create docs/"
+(sphinx)docs% git remote add origin https://github.com/USER/REPO.git
+(sphinx)docs$ git push -u origin gh-pages
+```
 
+- Then, click `Settings` > `Pages` in your github repository site.
+    - Make sure that showing branch be `gh-pages`.
+    - Toggle down from `/(root)` to `/docs`
+    - Deploying processing can be seen by clicking `Actions` tap.  
 
-
+---
+    
 ## 2. Jupyter Notebook 
+- After exporting notebooks, do the similar steps as Markdown.

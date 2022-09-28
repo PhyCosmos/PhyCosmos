@@ -231,4 +231,4 @@ source/                    # put your base files or directories of docs(.md)
 ---
     
 ## 2. Jupyter Notebook 
-- After exporting notebooks, do the similar steps as markdown.
+- After exporting notebooks, do the similar steps as Markdown.
