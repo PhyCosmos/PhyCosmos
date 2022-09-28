@@ -1,5 +1,8 @@
 ### Hi there 👋
 #### Hazy python
+
+##### 0. Docs are [here](https://phycosmos.github.io/PhyCosmos/build/html/index.html)
+
 ##### 1. Class
 - [Namespace](namespace.ipynb) 
 - [Methods in the Class](instance_class_static.ipynb)
