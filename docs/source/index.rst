@@ -10,23 +10,23 @@ Welcome to SphinxProject's documentation!
    :maxdepth: 3
    :caption: sphinx:
 
-   sphinx/staticmd.md
+   sphinx/staticmd
 
 
 .. toctree::
    :maxdepth: 2
    :caption: jupyter:
 
-   jupyter/namespace.md
-   jupyter/instance_class_static.md
+   jupyter/namespace
+   jupyter/instance_class_static
 
 .. toctree::
    :maxdepth: 2
    :caption: folder1:
 
-   folder1/doc1.md
-   folder1/doc2.md
-   folder1/subfolder1/doc3.md
+   folder1/doc1
+   folder1/doc2
+   folder1/subfolder1/doc3
 
 .. toctree::
    :maxdepth: 2
@@ -41,11 +41,10 @@ Welcome to SphinxProject's documentation!
    folder2/subfolder2/doc5.md
 
 
-
-
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+

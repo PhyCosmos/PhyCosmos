@@ -198,11 +198,14 @@ source/                    # put your base files or directories of docs(.md)
    folder2/doc4.md
    
 ```
+- `maxdepth` means the sections' depth on the index page.  
 - Whenever you modify contents sources, remove everything in `build/` and remake.
 ```
 (sphinx)docs$ make clean
 (sphinx)docs$ make html
+(sphinx)docs$ sphinx-build source -W -b linkcheck -d build/doctrees build/html
 ```
+- The last line has double-checked the links between doctrees and html.
 
 ### 1.5 deploy in Github pages
 - You need to create two files in `docs/` directory.
@@ -230,5 +233,15 @@ source/                    # put your base files or directories of docs(.md)
 
 ---
     
+### 1.6 Update your docs site.
+- whenever the base files in `source/`
+- make clean
+- make html
+- git commit
+- git push via `gh-pages` branch
+- make sure that codes in the github repository are shown in `gh-pages` branch 
+- `re-run all jobs` in Actions
+
+
 ## 2. Jupyter Notebook 
 - After exporting notebooks, do the similar steps as Markdown.

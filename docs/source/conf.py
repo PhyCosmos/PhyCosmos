@@ -13,6 +13,7 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../..'))
+sys.setrecursionlimit(1500)
 
 # -- import Sphinx pdj Themes -----------------------------------------------------------
 # import sphinx_pdj_theme
@@ -47,6 +48,8 @@ extensions = [
     'sphinx.ext.todo',          # `todo_include_todos = True` 
     'sphinx.ext.graphviz',
     'sphinx.ext.intersphinx',
+
+    'rinoh.frontend.sphinx',    # rinoh for latex
 ]
 source_suffix = {   # https://www.sphinx-doc.org/en/master/usage/markdown.html
     '.rst': 'restructuredtext',
@@ -70,7 +73,6 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -82,3 +84,10 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+latex_elements = {
+    'papersize': 'letterpaper',
+    'pointsize': '10pt',
+    'preamble': '',
+    'figure_align': 'htbp',
+}
