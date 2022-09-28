@@ -24,23 +24,27 @@ Welcome to SphinxProject's documentation!
    :maxdepth: 2
    :caption: folder1:
 
-   folder1/doc1
-   folder1/doc2
-   folder1/subfolder1/doc3
+   folder1/doc1.md
+   folder1/doc2.md
+   folder1/subfolder1/doc3.md
 
 .. toctree::
    :maxdepth: 2
    :caption: folder2:
 
-   folder2/doc4.md
-   
+   folder2/doc4.md 
+
 .. toctree::
    :maxdepth: 2
-   :caption: folder2/subfolder2:
+   :caption: folder2.subfolder2:
 
-   folder2/subfolder2/doc5.md
+   folder2/subfolder2/doc5.md  
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
 
+   modules
 Indices and tables
 ==================
 
