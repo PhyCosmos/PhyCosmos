@@ -14,28 +14,28 @@ Welcome to SphinxProject's documentation!
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: jupyter:
 
-   jupyter/instance_class_static.md
    jupyter/namespace.md
-
+   jupyter/instance_class_static.md
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: folder1:
 
    folder1/doc1.md
    folder1/doc2.md
+   folder1/subfolder1/doc3.md
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: folder2:
 
    folder2/doc4.md
    
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: folder2/subfolder2:
 
    folder2/subfolder2/doc5.md
